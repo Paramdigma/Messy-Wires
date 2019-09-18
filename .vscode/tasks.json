@@ -1,0 +1,29 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Print PDF",
+            "type": "shell",
+            "command": "pandoc",
+            "args": [
+                "--pdf-engine=weasyprint",
+                "--toc",
+                "chapters/book.md",
+                "-o book.pdf"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Generate Website",
+            "type": "shell",
+            "command": "pandoc",
+            "args": [
+                "chapters/book.md",
+                "-o book.html"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
