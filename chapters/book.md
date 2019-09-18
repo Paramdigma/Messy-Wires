@@ -50,7 +50,6 @@ If you are not familiar with the use of Grasshopper as a design tool, we recomme
 
 * Rhinoceros 6 and Grasshopper.
 * Archicad 21
-* 
 
 # Nodes
 
@@ -60,9 +59,9 @@ Consider the following grasshopper nodes:
 
 :::{#fig:ghComponents}
 
-![Inputless component](File_Path){#fig:Code}
-![Outputless component](File_Path){#fig:Code}
-![Component with input and output](File_Path){#fig:Code}
+![Inputless component](){#fig:Code1}
+![Outputless component](){#fig:Code2}
+![Component with input and output](){#fig:Code3}
 
 :::
 
@@ -76,18 +75,18 @@ Data trees are at the core of Grasshopper's functionality and understanding them
 * What do data trees *mean*?
 * How does Grasshopper process data trees as inputs?
 * Data Tree Inspection tools
-  * ParamViewer
-  * Panel
+    * ParamViewer
+    * Panel
 * Data Tree basic operations
-  * Flatten
-  * Graft
-  * Simplify
-  * Weave
-  * Sift
+    * Flatten
+    * Graft
+    * Simplify
+    * Weave
+    * Sift
 * Data Tree selection
-  * Relative Item
-  * Split Tree
-  * Relative Items
+    * Relative Item
+    * Split Tree
+    * Relative Items
 * Cross-reference
 
 ## What are data trees?
@@ -118,7 +117,7 @@ As you may have noticed, the examples in the previous section were all based on 
 Lets have a look at the last example from the previous section:
 
 > The data tree is divided in 3 levels, each containing a list of values:
-> 
+>
 > * `{0;n;n}` Plant
 >     * `{0;0;n}` Vegetable
 >         * `{0;0;0}` Product
@@ -143,12 +142,9 @@ In this 4-dimensionaL tree, every tree level has a *meaning* or, in other words,
 * The first level divides the data in Plant or Animal based products.
 * The second level divides each of those main categories into their own unique subcategories
 * The third level represents the different types of values we have fore each subcategory:
-  * Product name
-  * Product price
-  * Product color
-
-
-
+    * Product name
+    * Product price
+    * Product color
 
 ## Advanced Data Trees
 
