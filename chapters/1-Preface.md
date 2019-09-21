@@ -8,6 +8,8 @@ author:
 
 # Introduction
 
+<!-- Este capítulo lo veo más como un PROLOGO (como una combinación entre Stage of the art + Abstract)-->
+
 During the last 10 years, visual programming tools have become mainstream in many industries, transforming the way we design in the process.
 This new tools allow architects and designers to create unprecedented designs, introducing unique features that have become the trademark image of many successfull architects.
 
@@ -45,3 +47,8 @@ If you are not familiar with the use of Grasshopper as a design tool, we recomme
 * Grasshopper intro courses by David Rutten
 * Grasshopper advanced courses by David Rutten
 * ThinkParametric
+
+## Software requirements
+
+* Rhinoceros 6 and Grasshopper.
+* Archicad 21

@@ -1,3 +1,5 @@
+<!--Creo que este capítulo sería la INTRODUCCION del libro-->
+
 # Nodes
 
 Visual programming software, such as Grasshopper, is amost always based on the concept of ***nodes***, wich can be connected in a chain like manner to create complex interactions between them.

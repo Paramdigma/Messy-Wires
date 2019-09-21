@@ -7,9 +7,3 @@
 ## Putting it all together
 
 ## Making BIG changes
-
-# Making it better
-
-## Dynamic relaxation
-
-## Galapagos
