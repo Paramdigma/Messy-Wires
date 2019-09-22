@@ -1,0 +1,6 @@
+# Ignore binary grasshopper files
+**/*.gh
+
+# Ignore unwanted image formats
+**/*.pdf
+**/*.jpg
