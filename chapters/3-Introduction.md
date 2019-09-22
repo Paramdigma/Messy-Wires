@@ -1,8 +1,8 @@
-<!--Creo que este capítulo sería la INTRODUCCION del libro-->
+<!--Creo que este capÃ­tulo serÃ­a la INTRODUCCION del libro-->
 
 # Nodes
 
-Visual programming software, such as Grasshopper, is amost always based on the concept of ***nodes***, wich can be connected in a chain like manner to create complex interactions between them.
+Visual programming software, such as Grasshopper, is amost always based on the concept of **_nodes_**, wich can be connected in a chain like manner to create complex interactions between them.
 
 Consider the following grasshopper nodes:
 

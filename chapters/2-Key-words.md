@@ -1,3 +1,3 @@
 # Key Words
 
-<!--NOTATION & DEFINITIONS: Creo que sería interesante introducir un capítulo de definiciones de los conceptos más básicos antes de sumergirnos en las explicaciones--!>
+<!--NOTATION & DEFINITIONS: Creo que serÃ­a interesante introducir un capÃ­tulo de definiciones de los conceptos mÃ¡s bÃ¡sicos antes de sumergirnos en las explicaciones--!>

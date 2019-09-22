@@ -2,8 +2,8 @@
 title: Messy Wires
 subtitle: Creating successful visual scripts using Grasshopper
 author:
-    - Alan Rynne
-    - Noelia Rodriguez
+  - Alan Rynne
+  - Noelia Rodriguez
 ---
 
 # Introduction
@@ -15,17 +15,17 @@ However, these added capabilities usually come at a price: these higher level pr
 
 In this book, we will cover some of this concepts using Rhinoceros Grasshopper, a very popular visual programming software, that is widely used in many industries.
 
-It's title, *Messy Wires*, makes allusion to one of the main problems when creating successfull visual programming scripts at a professional level: *code clarity*, wich we will explain in more detail in [INSERT_REFERENCE].
+It's title, _Messy Wires_, makes allusion to one of the main problems when creating successfull visual programming scripts at a professional level: _code clarity_, wich we will explain in more detail in [INSERT_REFERENCE].
 
-We will start by understanding Grasshopper *Data Trees*, explaining the logic behind how they work, and how to properlly use them to introduce complexity in our designs while at keeping the size of our scripts manageable.
+We will start by understanding Grasshopper _Data Trees_, explaining the logic behind how they work, and how to properlly use them to introduce complexity in our designs while at keeping the size of our scripts manageable.
 
 We will also cover some visual programming good practices, such as grouping, naming conventions, structuring and ordering scripts and some concepts directly inherited from programing, such as DRY (Don't Repeat Yourself).
 
 More...
 
-* Scripting
-* BIM Connection
-* Teamwork
+- Scripting
+- BIM Connection
+- Teamwork
 
 ## How to use this book
 
@@ -41,19 +41,19 @@ This book is aimed at designers, engineers, architects and any other design prof
 
 If you are not familiar with the use of Grasshopper as a design tool, we recommend you to check out this incredible resources:
 
-* Grasshopper website
-* Grasshopper intro courses by David Rutten
-* Grasshopper advanced courses by David Rutten
-* ThinkParametric
+- Grasshopper website
+- Grasshopper intro courses by David Rutten
+- Grasshopper advanced courses by David Rutten
+- ThinkParametric
 
 # Software requirements
 
-* Rhinoceros 6 and Grasshopper.
-* Archicad 21
+- Rhinoceros 6 and Grasshopper.
+- Archicad 21
 
 # Nodes
 
-Visual programming software, such as Grasshopper, is amost always based on the concept of ***nodes***, wich can be connected in a chain like manner to create complex interactions between them.
+Visual programming software, such as Grasshopper, is amost always based on the concept of **_nodes_**, wich can be connected in a chain like manner to create complex interactions between them.
 
 Consider the following grasshopper nodes:
 
@@ -71,23 +71,23 @@ Grasshopper components can have any number of inputs and outputs, including none
 
 Data trees are at the core of Grasshopper's functionality and understanding them is of key importance for us. In this chapter you will learn:
 
-* What are data trees?
-* What do data trees *mean*?
-* How does Grasshopper process data trees as inputs?
-* Data Tree Inspection tools
-    * ParamViewer
-    * Panel
-* Data Tree basic operations
-    * Flatten
-    * Graft
-    * Simplify
-    * Weave
-    * Sift
-* Data Tree selection
-    * Relative Item
-    * Split Tree
-    * Relative Items
-* Cross-reference
+- What are data trees?
+- What do data trees _mean_?
+- How does Grasshopper process data trees as inputs?
+- Data Tree Inspection tools
+  - ParamViewer
+  - Panel
+- Data Tree basic operations
+  - Flatten
+  - Graft
+  - Simplify
+  - Weave
+  - Sift
+- Data Tree selection
+  - Relative Item
+  - Split Tree
+  - Relative Items
+- Cross-reference
 
 ## What are data trees"?"
 
@@ -108,43 +108,43 @@ The following level of complexity would be a 2-dimensional data tree, with $n$ n
 
 <!-- TODO: Insert example! -->
 
-1-dimensional and 2-dimensional data trees are the easiest to use and combine, but they have limited possibilities to represent complex data relations. As your grasshopper definitions grow, you will start dealing with *n-dimensional* data trees more often.
+1-dimensional and 2-dimensional data trees are the easiest to use and combine, but they have limited possibilities to represent complex data relations. As your grasshopper definitions grow, you will start dealing with _n-dimensional_ data trees more often.
 
 ## Structure = Meaning
 
-As you may have noticed, the examples in the previous section were all based on *categorical data*. This was a decision we took conciously, instead of representing the examples with geometric entities, since we wanted to emphathise the fact that the underlying data structure of a tree has actual meaning.
+As you may have noticed, the examples in the previous section were all based on _categorical data_. This was a decision we took conciously, instead of representing the examples with geometric entities, since we wanted to emphathise the fact that the underlying data structure of a tree has actual meaning.
 
 Lets have a look at the last example from the previous section:
 
 > The data tree is divided in 3 levels, each containing a list of values:
 >
-> * `{0;n;n}` Plant
->     * `{0;0;n}` Vegetable
->         * `{0;0;0}` Product
->         * `{0;0;1}` Price
->         * `{0;0;2}` Color
->     * `{0;1;n}` Fruit
->         * `{0;1;0}` Product
->         * `{0;1;1}` Price
->         * `{0;1;2}` Color
-> * `{1;n;n}` Animal
->     * `{1;0;n}` Meat
->         * `{1;0;0}` Product
->         * `{1;0;1}` Price
->         * `{1;0;2}` Color
->     * `{1;1;n}` Dairy
->         * `{1;1;0}` Product
->         * `{1;1;1}` Price
->         * `{1;1;2}` Color
+> - `{0;n;n}` Plant
+>   - `{0;0;n}` Vegetable
+>     - `{0;0;0}` Product
+>     - `{0;0;1}` Price
+>     - `{0;0;2}` Color
+>   - `{0;1;n}` Fruit
+>     - `{0;1;0}` Product
+>     - `{0;1;1}` Price
+>     - `{0;1;2}` Color
+> - `{1;n;n}` Animal
+>   - `{1;0;n}` Meat
+>     - `{1;0;0}` Product
+>     - `{1;0;1}` Price
+>     - `{1;0;2}` Color
+>   - `{1;1;n}` Dairy
+>     - `{1;1;0}` Product
+>     - `{1;1;1}` Price
+>     - `{1;1;2}` Color
 
-In this 4-dimensionaL tree, every tree level has a *meaning* or, in other words, they represent distinct characteristic of the data it contains:
+In this 4-dimensionaL tree, every tree level has a _meaning_ or, in other words, they represent distinct characteristic of the data it contains:
 
-* The first level divides the data in Plant or Animal based products.
-* The second level divides each of those main categories into their own unique subcategories
-* The third level represents the different types of values we have fore each subcategory:
-    * Product name
-    * Product price
-    * Product color
+- The first level divides the data in Plant or Animal based products.
+- The second level divides each of those main categories into their own unique subcategories
+- The third level represents the different types of values we have fore each subcategory:
+  - Product name
+  - Product price
+  - Product color
 
 ## Advanced Data Trees
 
