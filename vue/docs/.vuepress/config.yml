@@ -7,8 +7,11 @@ themeConfig:
   sidebar:
     - '/introduction'
     - '/chapters/data-trees/'
-  plugins:
-    - '@vuepress/back-to-top'
+    - '/chapters/keep-it-tidy/'
+    - '/chapters/advanced-components/'
+    - '/chapters/best-practices/'
+    - '/chapters/teamwork/'
+    - '/chapters/interoperability/'
   nav:
     - text: Home
       link: /

@@ -1,6 +1,5 @@
 ---
 title: Introduction
-heroImage: /paramdigma-black-large.svg
 ---
 
 # {{ $page.title }}
