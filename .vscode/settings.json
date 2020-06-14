@@ -23,5 +23,13 @@
         "MD013": false,
         "MD025": true,
         "no-hard-tabs": true,
-    }
+    },
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ]
 }

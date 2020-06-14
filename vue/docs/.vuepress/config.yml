@@ -1,0 +1,21 @@
+title: Messy Wires
+description: A complete guide to Visual Programming best practices using Grasshopper
+themeConfig:
+  logo: /paramdigma-black-large.svg
+  displayAllHeaders: true
+  activeHeaderLinks: true
+  sidebar:
+    - '/introduction'
+    - '/chapters/data-trees/'
+  plugins:
+    - '@vuepress/back-to-top'
+  nav:
+    - text: Home
+      link: /
+    - text: Book
+      link: /introduction
+  repo: 'paramdigma/messy-wires'
+  repoLabel: 'Contribute!'
+  editLinks: true
+  editLinkText: 'Help us improve this page!'
+  lastUpdated: true
