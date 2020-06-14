@@ -4,3 +4,6 @@
 # Ignore unwanted image formats
 **/*.pdf
 **/*.jpg
+assets/css/*.css
+assets/css/*.css.map
+**/.sass-cache/

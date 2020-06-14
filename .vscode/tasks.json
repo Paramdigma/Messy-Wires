@@ -1,29 +1,40 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "Print PDF",
-            "type": "shell",
-            "command": "pandoc",
-            "args": [
-                "--pdf-engine=weasyprint",
-                "--toc",
-                "chapters/book.md",
-                "-o book.pdf"
-            ],
-            "problemMatcher": []
-        },
-        {
-            "label": "Generate Website",
-            "type": "shell",
-            "command": "pandoc",
-            "args": [
-                "chapters/book.md",
-                "-o book.html"
-            ],
-            "problemMatcher": []
-        }
-    ]
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Print PDF",
+      "type": "shell",
+      "command": "pandoc",
+      "args": [
+        "--pdf-engine=weasyprint",
+        "--template=template/book.html",
+        "--section-divs",
+        "test.md",
+        "-o test.pdf"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Generate Website",
+      "type": "shell",
+      "command": "pandoc",
+      "args": [
+        "--template=template/book.html",
+        "test.md",
+        "--section-divs",
+        "-o test.html"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
 }
