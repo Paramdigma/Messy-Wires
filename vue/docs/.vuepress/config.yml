@@ -5,20 +5,20 @@ themeConfig:
   displayAllHeaders: true
   activeHeaderLinks: true
   sidebar:
-    - '/introduction'
-    - '/chapters/data-trees/'
-    - '/chapters/keep-it-tidy/'
-    - '/chapters/advanced-components/'
-    - '/chapters/best-practices/'
-    - '/chapters/teamwork/'
-    - '/chapters/interoperability/'
+    - /introduction
+    - /chapters/data-trees/
+    - /chapters/keep-it-tidy/
+    - /chapters/advanced-components/
+    - /chapters/best-practices/
+    - /chapters/teamwork/
+    - /chapters/interoperability/
   nav:
     - text: Home
       link: /
     - text: Book
       link: /introduction
-  repo: 'paramdigma/messy-wires'
-  repoLabel: 'Contribute!'
+  repo: paramdigma/messy-wires
+  repoLabel: Contribute!
   editLinks: true
-  editLinkText: 'Help us improve this page!'
+  editLinkText: Help us improve this page!
   lastUpdated: true
