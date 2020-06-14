@@ -1,4 +1,8 @@
-# Basic Data Trees
+---
+title: Data Trees
+---
+
+# {{ $page.title }}
 
 Data trees are at the core of Grasshopper's functionality and understanding them is of key importance for us. In this chapter you will learn:
 
@@ -20,7 +24,7 @@ Data trees are at the core of Grasshopper's functionality and understanding them
   - Relative Items
 - Cross-reference
 
-## What are data trees"?"
+## What are data trees ?
 
 Data Trees are the way Grasshopper organizes data internally, wether it's numbers, lines, circles, meshes, surfaces or any combination of the latter. In that sense, we understand a Data Tree as a way to organize entities into different categories.
 

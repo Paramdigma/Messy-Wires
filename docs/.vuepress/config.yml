@@ -5,7 +5,7 @@ themeConfig:
   displayAllHeaders: true
   activeHeaderLinks: true
   sidebar:
-    - /introduction
+    - /introduction/
     - /chapters/data-trees/
     - /chapters/keep-it-tidy/
     - /chapters/advanced-components/
@@ -22,3 +22,8 @@ themeConfig:
   editLinks: true
   editLinkText: Help us improve this page!
   lastUpdated: true
+hero:
+  - - 'script'
+    - data-ad-client: 'ca-pub-9365287716304588'
+      async: true
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
