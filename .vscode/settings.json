@@ -10,18 +10,13 @@
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        
     },
-    "markdownlint.config": {
-        "default": true,
-        "MD003": {
-            "style": "atx"
-        },
-        "MD007": {
-            "indent": 2
-        },
-        "MD013": false,
-        "MD025": true,
-        "no-hard-tabs": true,
-    }
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ]
 }
