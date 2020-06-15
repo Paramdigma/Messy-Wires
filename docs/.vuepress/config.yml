@@ -1,5 +1,6 @@
 title: Messy Wires
 description: A complete guide to Visual Programming best practices using Grasshopper
+dest: ./dist
 themeConfig:
   logo: /paramdigma-black-large.svg
   displayAllHeaders: true
