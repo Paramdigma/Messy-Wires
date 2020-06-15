@@ -5,6 +5,7 @@ themeConfig:
   displayAllHeaders: true
   activeHeaderLinks: true
   sidebar:
+    - /preface/
     - /introduction/
     - /chapters/data-trees/
     - /chapters/keep-it-tidy/
@@ -12,18 +13,25 @@ themeConfig:
     - /chapters/best-practices/
     - /chapters/teamwork/
     - /chapters/interoperability/
+    - /conclusion/
   nav:
     - text: Home
       link: /
     - text: Book
       link: /introduction
+    - text: Author
+      link: 'https://paramdigma.com'
   repo: paramdigma/messy-wires
   repoLabel: Contribute!
   editLinks: true
   editLinkText: Help us improve this page!
   lastUpdated: true
-hero:
+head:
   - - 'script'
     - data-ad-client: 'ca-pub-9365287716304588'
       async: true
       src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+plugins:
+  - 'vuepress-plugin-typescript'
+  - 'vuepress-plugin-catalog-graph'
+  - 'flowchart'
