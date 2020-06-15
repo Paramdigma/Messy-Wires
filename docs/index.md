@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /assets/images/paramdigma-black-large.svg
+heroImage: assets/images/paramdigma-black-large.svg
 actionText: Get started! →
 actionLink: /introduction/
 xfeatures:

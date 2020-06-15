@@ -3,7 +3,7 @@ description: A complete guide to Visual Programming best practices using Grassho
 dest: ./dist
 base: /Messy-Wires/
 themeConfig:
-  logo: /assets/images/paramdigma-black-large.svg
+  logo: assets/images/paramdigma-black-large.svg
   displayAllHeaders: true
   activeHeaderLinks: true
   sidebar:
