@@ -83,8 +83,14 @@ In this 4-dimensionaL tree, every tree level has a _meaning_ or, in other words,
 
 ## Advanced Data Trees
 
+<!-- TODO: Aquí deberíamos de hablar de K2, Split Tree, etc... y puede que algunos plugins extra también. -->
+
 ## Advanced selection
+
+<!-- Aquí metemos todo lo relativo a relative item y selección de items en arboles de datos. -->
 
 ## Structure relationships
 
 ## Advanced tree editing
+
+<!-- ????? No tengo ni idea de que escribir aquí!! @NoeliaRG echale un vistazo a esto!! -->
