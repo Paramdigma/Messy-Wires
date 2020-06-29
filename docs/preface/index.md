@@ -66,7 +66,9 @@ Throughout the book, you will find links to the appropriate files for each secti
 
 Since we will be using Grasshopper as our main tool, most of the files will be saved in `.ghx` format, which is 'friendlier' to 'git', the version control software we use (and love! ❤️).
 
-## Software requirements
+## Technical requirements
 
-- Rhinoceros 6 and Grasshopper.
-- Archicad 21
+Since this is book for [Grasshopper](https://grasshopper3d.com) users, having [Rhino 6](https://rhino3d.com) installed is the only requirement.
+
+> We will make our best efforts to use only cross-platform compatible plug-ins (meaning, they will work in Mac and Windows). But there will be cases where we might recommend a plug-in that is Windows only.
+> This is the case of `SnappingGecko` a very handy plugin for node alignment.

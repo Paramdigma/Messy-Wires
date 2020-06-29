@@ -1,8 +1,8 @@
 ---
 home: true
-heroImage: assets/images/paramdigma-black-large.svg
+heroImage: /assets/images/paramdigma-black-large.svg
 actionText: Get started! →
-actionLink: /introduction/
+actionLink: /preface/
 xfeatures:
   - title: Data Trees
     details: DataTrees in GH convey meaning. Learn how to interpret that meaning and create appropriate structures.

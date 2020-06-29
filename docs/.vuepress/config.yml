@@ -1,9 +1,10 @@
 title: Messy Wires
 description: A complete guide to Visual Programming best practices using Grasshopper
 dest: ./dist
-base: /Messy-Wires/
+markdown:
+  lineNumbers: true
 themeConfig:
-  logo: assets/images/paramdigma-black-large.svg
+  logo: /assets/images/paramdigma-black-large.svg
   displayAllHeaders: true
   activeHeaderLinks: true
   sidebar:
@@ -83,6 +84,6 @@ head:
     ]
   - ['meta', { name: 'theme-color', content: '#ffffff' }]
 plugins:
-  - 'vuepress-plugin-typescript'
-  - 'vuepress-plugin-catalog-graph'
+  - 'vuepress-plugin-mathjax'
   - 'flowchart'
+  - ['vuepress-plugin-typescript', { tsLoaderOptions: {} }]
